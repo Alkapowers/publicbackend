@@ -12,6 +12,14 @@ router.post("/register", upload.single("profilePicture"), async (req, res) => {
     const { firstName, lastName, email, password, phoneNumber, roles } =
       req.body;
 
+    // Ensure JWT_SECRET is available
+    const jwtSecret = process.env.JWT_SECRET;
+    if (!jwtSecret) {
+      throw new Error('JWT_SECRET environment variable is required');
+    }
+
+    const jwtExpire = process.env.JWT_EXPIRE || "7d";
+
     // Check if user already exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
@@ -44,9 +52,9 @@ router.post("/register", upload.single("profilePicture"), async (req, res) => {
     // Generate JWT token
     const token = jwt.sign(
       { id: user._id },
-      process.env.JWT_SECRET as string, // Type assertion
+      jwtSecret,
       {
-        expiresIn: process.env.JWT_EXPIRE || "7d", // Fallback value
+        expiresIn: jwtExpire,
       }
     );
 
@@ -87,6 +95,14 @@ router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
 
+    // Ensure JWT_SECRET is available
+    const jwtSecret = process.env.JWT_SECRET;
+    if (!jwtSecret) {
+      throw new Error('JWT_SECRET environment variable is required');
+    }
+
+    const jwtExpire = process.env.JWT_EXPIRE || "7d";
+
     // Find user by email
     const user = await User.findOne({ email });
     if (!user) {
@@ -106,8 +122,8 @@ router.post("/login", async (req, res) => {
     }
 
     // Generate JWT token
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET as string, {
-      expiresIn: process.env.JWT_EXPIRE || "7d",
+    const token = jwt.sign({ id: user._id }, jwtSecret, {
+      expiresIn: jwtExpire,
     });
 
     // Set cookie

@@ -8,6 +8,12 @@ export interface AuthRequest extends Request {
 
 export const authenticateToken = async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
+    // Ensure JWT_SECRET is available
+    const jwtSecret = process.env.JWT_SECRET;
+    if (!jwtSecret) {
+      throw new Error('JWT_SECRET environment variable is required');
+    }
+
     const token = req.cookies.token || req.header('Authorization')?.replace('Bearer ', '');
 
     if (!token) {
@@ -17,7 +23,7 @@ export const authenticateToken = async (req: AuthRequest, res: Response, next: N
       });
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET as string) as any;
+    const decoded = jwt.verify(token, jwtSecret) as any;
     const user = await User.findById(decoded.id).select('-password');
 
     if (!user) {
