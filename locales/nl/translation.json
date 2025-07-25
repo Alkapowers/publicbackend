@@ -1,0 +1,52 @@
+{
+  "auth": {
+    "user_exists": "Gebruiker met dit e-mailadres bestaat al",
+    "registration_successful": "Gebruiker succesvol geregistreerd",
+    "invalid_credentials": "Ongeldig e-mailadres of wachtwoord",
+    "login_successful": "Inloggen succesvol",
+    "logout_successful": "Uitloggen succesvol",
+    "token_required": "Toegangstoken is vereist",
+    "invalid_token": "Ongeldige of verlopen token",
+    "unauthorized": "Ongeautoriseerde toegang",
+    "insufficient_permissions": "Onvoldoende rechten"
+  },
+  "errors": {
+    "server_error": "Interne serverfout",
+    "not_found": "Eindpunt niet gevonden",
+    "user_not_found": "Gebruiker niet gevonden",
+    "product_not_found": "Product niet gevonden",
+    "blog_not_found": "Blog niet gevonden",
+    "review_not_found": "Review niet gevonden",
+    "case_study_not_found": "Case study niet gevonden",
+    "log_not_found": "Log niet gevonden",
+    "team_member_not_found": "Teamlid niet gevonden",
+    "faq_not_found": "FAQ niet gevonden",
+    "image_required": "Afbeelding is vereist"
+  },
+  "messages": {
+    "user_updated": "Gebruiker succesvol bijgewerkt",
+    "user_deleted": "Gebruiker succesvol verwijderd",
+    "product_created": "Product succesvol aangemaakt",
+    "product_updated": "Product succesvol bijgewerkt",
+    "product_deleted": "Product succesvol verwijderd",
+    "blog_created": "Blog succesvol aangemaakt",
+    "blog_updated": "Blog succesvol bijgewerkt",
+    "blog_deleted": "Blog succesvol verwijderd",
+    "featured_image_updated": "Uitgelichte afbeelding succesvol bijgewerkt",
+    "featured_image_deleted": "Uitgelichte afbeelding succesvol verwijderd",
+    "review_created": "Review succesvol aangemaakt",
+    "review_updated": "Review succesvol bijgewerkt",
+    "review_deleted": "Review succesvol verwijderd",
+    "case_study_created": "Case study succesvol aangemaakt",
+    "case_study_updated": "Case study succesvol bijgewerkt",
+    "case_study_deleted": "Case study succesvol verwijderd",
+    "log_created": "Log succesvol aangemaakt",
+    "log_deleted": "Log succesvol verwijderd",
+    "team_member_created": "Teamlid succesvol aangemaakt",
+    "team_member_updated": "Teamlid succesvol bijgewerkt",
+    "team_member_deleted": "Teamlid succesvol verwijderd",
+    "faq_created": "FAQ succesvol aangemaakt",
+    "faq_updated": "FAQ succesvol bijgewerkt",
+    "faq_deleted": "FAQ succesvol verwijderd"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "auth": {
+    "user_exists": "User with this email already exists",
+    "registration_successful": "User registered successfully",
+    "invalid_credentials": "Invalid email or password",
+    "login_successful": "Login successful",
+    "logout_successful": "Logout successful",
+    "token_required": "Access token is required",
+    "invalid_token": "Invalid or expired token",
+    "unauthorized": "Unauthorized access",
+    "insufficient_permissions": "Insufficient permissions"
+  },
+  "errors": {
+    "server_error": "Internal server error",
+    "not_found": "Endpoint not found",
+    "user_not_found": "User not found",
+    "product_not_found": "Product not found",
+    "blog_not_found": "Blog not found",
+    "review_not_found": "Review not found",
+    "case_study_not_found": "Case study not found",
+    "log_not_found": "Log not found",
+    "team_member_not_found": "Team member not found",
+    "faq_not_found": "FAQ not found",
+    "image_required": "Image is required"
+  },
+  "messages": {
+    "user_updated": "User updated successfully",
+    "user_deleted": "User deleted successfully",
+    "product_created": "Product created successfully",
+    "product_updated": "Product updated successfully",
+    "product_deleted": "Product deleted successfully",
+    "blog_created": "Blog created successfully",
+    "blog_updated": "Blog updated successfully",
+    "blog_deleted": "Blog deleted successfully",
+    "featured_image_updated": "Featured image updated successfully",
+    "featured_image_deleted": "Featured image deleted successfully",
+    "review_created": "Review created successfully",
+    "review_updated": "Review updated successfully",
+    "review_deleted": "Review deleted successfully",
+    "case_study_created": "Case study created successfully",
+    "case_study_updated": "Case study updated successfully",
+    "case_study_deleted": "Case study deleted successfully",
+    "log_created": "Log created successfully",
+    "log_deleted": "Log deleted successfully",
+    "team_member_created": "Team member created successfully",
+    "team_member_updated": "Team member updated successfully",
+    "team_member_deleted": "Team member deleted successfully",
+    "faq_created": "FAQ created successfully",
+    "faq_updated": "FAQ updated successfully",
+    "faq_deleted": "FAQ deleted successfully"
+  }
+}

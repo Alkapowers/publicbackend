@@ -1,0 +1,52 @@
+{
+  "auth": {
+    "user_exists": "Un utilisateur avec cette adresse e-mail existe déjà",
+    "registration_successful": "Utilisateur enregistré avec succès",
+    "invalid_credentials": "E-mail ou mot de passe invalide",
+    "login_successful": "Connexion réussie",
+    "logout_successful": "Déconnexion réussie",
+    "token_required": "Le jeton d'accès est requis",
+    "invalid_token": "Jeton invalide ou expiré",
+    "unauthorized": "Accès non autorisé",
+    "insufficient_permissions": "Permissions insuffisantes"
+  },
+  "errors": {
+    "server_error": "Erreur interne du serveur",
+    "not_found": "Point de terminaison non trouvé",
+    "user_not_found": "Utilisateur non trouvé",
+    "product_not_found": "Produit non trouvé",
+    "blog_not_found": "Blog non trouvé",
+    "review_not_found": "Avis non trouvé",
+    "case_study_not_found": "Étude de cas non trouvée",
+    "log_not_found": "Journal non trouvé",
+    "team_member_not_found": "Membre de l'équipe non trouvé",
+    "faq_not_found": "FAQ non trouvée",
+    "image_required": "Image requise"
+  },
+  "messages": {
+    "user_updated": "Utilisateur mis à jour avec succès",
+    "user_deleted": "Utilisateur supprimé avec succès",
+    "product_created": "Produit créé avec succès",
+    "product_updated": "Produit mis à jour avec succès",
+    "product_deleted": "Produit supprimé avec succès",
+    "blog_created": "Blog créé avec succès",
+    "blog_updated": "Blog mis à jour avec succès",
+    "blog_deleted": "Blog supprimé avec succès",
+    "featured_image_updated": "Image en vedette mise à jour avec succès",
+    "featured_image_deleted": "Image en vedette supprimée avec succès",
+    "review_created": "Avis créé avec succès",
+    "review_updated": "Avis mis à jour avec succès",
+    "review_deleted": "Avis supprimé avec succès",
+    "case_study_created": "Étude de cas créée avec succès",
+    "case_study_updated": "Étude de cas mise à jour avec succès",
+    "case_study_deleted": "Étude de cas supprimée avec succès",
+    "log_created": "Journal créé avec succès",
+    "log_deleted": "Journal supprimé avec succès",
+    "team_member_created": "Membre de l'équipe créé avec succès",
+    "team_member_updated": "Membre de l'équipe mis à jour avec succès",
+    "team_member_deleted": "Membre de l'équipe supprimé avec succès",
+    "faq_created": "FAQ créée avec succès",
+    "faq_updated": "FAQ mise à jour avec succès",
+    "faq_deleted": "FAQ supprimée avec succès"
+  }
+}

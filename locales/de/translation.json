@@ -1,0 +1,52 @@
+{
+  "auth": {
+    "user_exists": "Benutzer mit dieser E-Mail-Adresse existiert bereits",
+    "registration_successful": "Benutzer erfolgreich registriert",
+    "invalid_credentials": "Ungültige E-Mail oder Passwort",
+    "login_successful": "Anmeldung erfolgreich",
+    "logout_successful": "Abmeldung erfolgreich",
+    "token_required": "Zugriffstoken ist erforderlich",
+    "invalid_token": "Ungültiger oder abgelaufener Token",
+    "unauthorized": "Unbefugter Zugriff",
+    "insufficient_permissions": "Unzureichende Berechtigungen"
+  },
+  "errors": {
+    "server_error": "Interner Serverfehler",
+    "not_found": "Endpunkt nicht gefunden",
+    "user_not_found": "Benutzer nicht gefunden",
+    "product_not_found": "Produkt nicht gefunden",
+    "blog_not_found": "Blog nicht gefunden",
+    "review_not_found": "Bewertung nicht gefunden",
+    "case_study_not_found": "Fallstudie nicht gefunden",
+    "log_not_found": "Protokoll nicht gefunden",
+    "team_member_not_found": "Teammitglied nicht gefunden",
+    "faq_not_found": "FAQ nicht gefunden",
+    "image_required": "Bild ist erforderlich"
+  },
+  "messages": {
+    "user_updated": "Benutzer erfolgreich aktualisiert",
+    "user_deleted": "Benutzer erfolgreich gelöscht",
+    "product_created": "Produkt erfolgreich erstellt",
+    "product_updated": "Produkt erfolgreich aktualisiert",
+    "product_deleted": "Produkt erfolgreich gelöscht",
+    "blog_created": "Blog erfolgreich erstellt",
+    "blog_updated": "Blog erfolgreich aktualisiert",
+    "blog_deleted": "Blog erfolgreich gelöscht",
+    "featured_image_updated": "Hauptbild erfolgreich aktualisiert",
+    "featured_image_deleted": "Hauptbild erfolgreich gelöscht",
+    "review_created": "Bewertung erfolgreich erstellt",
+    "review_updated": "Bewertung erfolgreich aktualisiert",
+    "review_deleted": "Bewertung erfolgreich gelöscht",
+    "case_study_created": "Fallstudie erfolgreich erstellt",
+    "case_study_updated": "Fallstudie erfolgreich aktualisiert",
+    "case_study_deleted": "Fallstudie erfolgreich gelöscht",
+    "log_created": "Protokoll erfolgreich erstellt",
+    "log_deleted": "Protokoll erfolgreich gelöscht",
+    "team_member_created": "Teammitglied erfolgreich erstellt",
+    "team_member_updated": "Teammitglied erfolgreich aktualisiert",
+    "team_member_deleted": "Teammitglied erfolgreich gelöscht",
+    "faq_created": "FAQ erfolgreich erstellt",
+    "faq_updated": "FAQ erfolgreich aktualisiert",
+    "faq_deleted": "FAQ erfolgreich gelöscht"
+  }
+}
