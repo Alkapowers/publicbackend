@@ -1,5 +1,5 @@
 import express from "express";
-import jwt from "jsonwebtoken";
+import jwt, { Secret } from "jsonwebtoken";
 import { User } from "../models/User";
 import { upload } from "../config/cloudinary";
 import { authenticateToken, AuthRequest } from "../middleware/auth";
@@ -52,7 +52,7 @@ router.post("/register", upload.single("profilePicture"), async (req, res) => {
     // Generate JWT token
     const token = jwt.sign(
       { id: user._id },
-      jwtSecret,
+      jwtSecret as Secret,
       {
         expiresIn: jwtExpire,
       }
@@ -122,7 +122,7 @@ router.post("/login", async (req, res) => {
     }
 
     // Generate JWT token
-    const token = jwt.sign({ id: user._id }, jwtSecret, {
+    const token = jwt.sign({ id: user._id }, jwtSecret as Secret, {
       expiresIn: jwtExpire,
     });
 
