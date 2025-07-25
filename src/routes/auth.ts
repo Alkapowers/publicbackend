@@ -52,7 +52,7 @@ router.post("/register", upload.single("profilePicture"), async (req, res) => {
     // Generate JWT token
     const token = jwt.sign(
       { id: user._id },
-      jwtSecret as Secret,
+      jwtSecret,
       {
         expiresIn: jwtExpire,
       }
@@ -122,7 +122,7 @@ router.post("/login", async (req, res) => {
     }
 
     // Generate JWT token
-    const token = jwt.sign({ id: user._id }, jwtSecret as Secret, {
+    const token = jwt.sign({ id: user._id }, jwtSecret, {
       expiresIn: jwtExpire,
     });
 
