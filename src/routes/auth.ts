@@ -13,7 +13,7 @@ router.post("/register", upload.single("profilePicture"), async (req, res) => {
       req.body;
 
     // Ensure JWT_SECRET is available
-    const jwtSecret = process.env.JWT_SECRET;
+    const jwtSecret: string = process.env.JWT_SECRET as string;
     if (!jwtSecret) {
       throw new Error('JWT_SECRET environment variable is required');
     }
@@ -96,7 +96,7 @@ router.post("/login", async (req, res) => {
     const { email, password } = req.body;
 
     // Ensure JWT_SECRET is available
-    const jwtSecret = process.env.JWT_SECRET;
+    const jwtSecret: string = process.env.JWT_SECRET as string;
     if (!jwtSecret) {
       throw new Error('JWT_SECRET environment variable is required');
     }

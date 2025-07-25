@@ -9,7 +9,7 @@ export interface AuthRequest extends Request {
 export const authenticateToken = async (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
     // Ensure JWT_SECRET is available
-    const jwtSecret = process.env.JWT_SECRET;
+    const jwtSecret: string = process.env.JWT_SECRET as string;
     if (!jwtSecret) {
       throw new Error('JWT_SECRET environment variable is required');
     }
